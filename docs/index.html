@@ -1,3 +1,133 @@
+<html>
+<head>
 
-<a href="vacinas_ecdc.html">Vacinas ECDC</a>
-<a href="incidencia.html">Incidência</a>
+<style>
+body {
+    background: #111; color: #ccc;
+    margin: 2em auto;
+    max-width: 1024px;
+    font-family: sans-serif;
+    font-size: 16px;
+
+}
+img {
+    width: 1024px;
+}
+hr {
+    border: 1px dotted #777;
+    margin: 2em -1em 1em -1em;
+}
+</style>
+
+</head>
+
+<body>
+    <div class="body">
+    <h1>Dados para dia 2021-05-31</h1>
+    <hr />
+
+    <h1>Confirmados</h1>
+
+    <h2>Amostras vs. Confirmados</h2>
+    <p>
+        Média 7 dias de amostras Total, PCR, e Antigénio, do lado esquerdo, vs. média 7 dias de 
+        confirmados. Usado para ver picos de testagem por exemplo no início da escola.
+    </p>
+    <img src="charts/diario_amostras_vs_confirmados.png" />
+
+    <hr />
+    <h1>Hospitalização</h1>
+
+    <h2>Variação Internados Enfermaria</h2>
+    <p>
+        Variação internados enfermaria diários, média 7 dias, médias 14 dias, e 
+        variação da variação semanal (7diff).
+    </p>
+    <img src="charts/variacao_enfermaria.png" />
+    <hr />
+
+    <h2>Variação Internados UCI</h2>
+    <p>
+        Variação internados UCI diários, média 7 dias, médias 14 dias, e 
+        variação da variação semanal (7diff).
+    </p>
+    <img src="charts/variacao_uci.png" />
+    <hr />
+
+    <hr />
+    <h1>Incidência</h1>
+    <p>
+        Incidência a 14 dias por 100k, Nacional, e para cada região. Assumido verde abaixo de 60, 
+        amarelo de 60 inclusivé a 120, laranja até 240, vermelho até 480, vermelho escuro até
+        960, e castanho acima. Esperemos não voltar sequer ao laranja. 
+    </p>
+
+    <h2>Incidência Nacional</h2>
+    <img src="charts/incidencia_Nacional.png" />
+
+    <h2>Incidência Norte</h2>
+    <img src="charts/incidencia_norte.png" />
+
+    <h2>Incidência Centro</h2>
+    <img src="charts/incidencia_centro.png" />
+
+    <h2>Incidência LVT</h2>
+    <img src="charts/incidencia_lvt.png" />
+
+    <h2>Incidência Alentejo</h2>
+    <img src="charts/incidencia_alentejo.png" />
+
+    <h2>Incidência Algarve</h2>
+    <img src="charts/incidencia_algarve.png" />
+
+    <h2>Incidência Madeira</h2>
+    <img src="charts/incidencia_madeira.png" />
+
+    <h2>Incidência Açores</h2>
+    <img src="charts/incidencia_acores.png" />
+
+    <hr />
+    <h1>Rt</h1>
+
+    <img src="charts/variacao_rt.png" />
+
+
+    <hr />
+    <h1>Vacinação ECDC</h1>
+    <p>
+        Dados semanais publicados na ECDC e incluindo a divisão por tipo de vacina, permitindo
+        o cálculo da previsão de "totalmente vacinado" usando os dados da primeira dose e 
+        assumindo a segunda dose no futuro - Moderna 28 dias / 4 semanas, Pfizer 28 dias 
+        / 4 semanas (21 dias / 3 semanas antes), AstraZeneca 84 dias / 12 semanas, e Janssen 
+        entrando logo como vacinado.
+    </p>
+    <p>
+        <em>Nota:</em> os valores da semana mais recentes podem não estar actualizados, o que 
+        pode indicar o ponto mais recente a linha da vacinação real estar mais abaixo que a 
+        previsão. Isto geralmente corrige-se passado uns dias, ou na semana seguinte. 
+    </p>
+
+    <h2>Vacinas ECDC Previsão</h2>
+    <img src="charts/vacinas_ecdc_previsao.png" />
+
+    <h2>Vacinas ECDC Previsão Total</h2>
+    <img src="charts/vacinas_ecdc_previsao_total.png" />
+
+    <h2>Vacinas ECDC Previsão Pfizer</h2>
+    <img src="charts/vacinas_ecdc_previsao_COM.png" />
+
+    <h2>Vacinas ECDC Previsão Moderna</h2>
+    <img src="charts/vacinas_ecdc_previsao_MOD.png" />
+
+    <h2>Vacinas ECDC Previsão AstraZeneca</h2>
+    <img src="charts/vacinas_ecdc_previsao_AZ.png" />
+
+    <h2>Vacinas ECDC Previsão Janssen</h2>
+    <img src="charts/vacinas_ecdc_previsao_JANSS.png" />
+
+    <h2>Vacinas ECDC Previsão Acumulado</h2>
+    <img src="charts/vacinas_ecdc_previsao_accumulado.png" />
+
+</div>
+</body>
+</html>
