@@ -17,13 +17,17 @@ hr {
     border: 1px dotted #777;
     margin: 2em -1em 1em -1em;
 }
+.note {
+    position: fixed;
+    top:0; right:0; background: #b24845; color: white; padding: 4px 100px;
+    transform: translate(80px, 40px) rotate(45deg);
+}  
 </style>
 
 </head>
 
 <body>
-    <div class="body">
-    <h1>Dados para dia 2021-06-01 15:52</h1>
+    <h1>Dados para dia 2021-06-01 20:54</h1>
     <hr />
 
     <h1>Confirmados</h1>
@@ -34,6 +38,17 @@ hr {
         confirmados. Usado para ver picos de testagem por exemplo no início da escola.
     </p>
     <img src="charts/diario_amostras_vs_confirmados.png" />
+
+    <hr />
+    <h1>Vigilância</h1>
+
+    <h2>Vigilância vs. Ativos</h2>
+    <p>
+        Variação vigilância vs. ativos, e vigilância por ativos. Quiçá havendo mais em vigilância
+        que ativos poderá representar surtos com grupos maiores.
+    </p>
+    <img src="charts/variacao_vigilancia_1.png" />
+    <img src="charts/variacao_vigilancia_2.png" />
 
     <hr />
     <h1>Hospitalização</h1>
@@ -160,6 +175,7 @@ hr {
     <hr />
 
     <p>Dados e código disponível em <a href="https://github.com/dssg-pt/covid19pt-data">Repo COVID19 da DSSG-PT</a>.</p>
-</div>
+
+    <div class="note">DSSG-PT</div>
 </body>
 </html>
